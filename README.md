@@ -1,2 +1,7 @@
-# FolderLock
 FolderLock is a free, browser-based file encryption web app that lets anyone password-protect their files without installing any software or creating an account. Built entirely with HTML, CSS, and JavaScript, it runs 100% in the browser — meaning your files never leave your device or get uploaded to any server.
+How it works is simple: you drop your files in, set a password, and the tool compresses and encrypts them into a single .locked file you can download and store anywhere — a USB drive, cloud storage, or email. To get your files back, you upload the .locked file, enter the password, and all your original files are instantly restored.
+Under the hood it uses AES-256-GCM encryption, the same standard used by banks and governments, combined with PBKDF2 key derivation at 200,000 rounds which makes brute-force attacks extremely slow. Every encryption uses a random salt and IV, so even the same password produces a different output each time.
+Key features include drag-and-drop file selection with file type icons, built-in compression that can shrink files by up to 80%, a password strength meter, show/hide password toggle, custom naming for the locked file, a full reset button, and support for encrypting multiple files at once into one vault.
+The website itself is fully responsive and works on any device — desktop, tablet, or phone — across Chrome, Firefox, Safari, and Edge with no installation needed.
+Built by Vivek Kumar, a Class 11 student and hobbyist coder, FolderLock was created to solve a real problem: giving everyday people a simple, trustworthy way to protect their private files without needing technical knowledge or expensive software.
+try it out www.folderlock.netlify.app
